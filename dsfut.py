@@ -24,7 +24,7 @@ class DSFUT:
     def get(self):
         self.timestamp = str(int(time.time()))
         signature = self.hash()
-        url = "https://dsfut.net/api/21/" + self.console + "/" + self.partner_id + "/" + str(self.timestamp) +  "/" + signature + "/"
+        url = "https://dsfut.net/api/22/" + self.console + "/" + self.partner_id + "/" + str(self.timestamp) +  "/" + signature + "/"
         params = {
             "min_buy": self.min_buy,
             "max_buy": self.max_buy
