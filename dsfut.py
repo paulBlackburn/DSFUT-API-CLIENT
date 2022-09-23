@@ -24,7 +24,7 @@ class DSFUT:
     def get(self):
         self.timestamp = str(int(time.time()))
         signature = self.hash()
-        url = "https://dsfut.net/api/22/" + self.console + "/" + self.partner_id + "/" + str(self.timestamp) +  "/" + signature + "/"
+        url = "https://dsfut.net/api/23/" + self.console + "/" + self.partner_id + "/" + str(self.timestamp) +  "/" + signature + "/"
         params = {
             "min_buy": self.min_buy,
             "max_buy": self.max_buy
@@ -45,7 +45,7 @@ class DSFUT:
 if __name__ == "__main__":
     assert len(sys.argv) >= 5
     console = sys.argv[1]
-    assert console in ["ps", "xb", "pc"]
+    assert console in ["ps", "pc"]
     partner_id = sys.argv[2]
     secret_key = sys.argv[3]
     max_buy = int(sys.argv[4])
