@@ -54,4 +54,4 @@ if __name__ == "__main__":
         min_buy = int(sys.argv[5])
     dsfut = DSFUT(console, partner_id, secret_key, max_buy, min_buy)
     while dsfut.get():
-        time.sleep(.25)
+        time.sleep(1)
